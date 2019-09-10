@@ -10,9 +10,9 @@ const Filter = props => {
       <option value="romance">Romance</option>
       <option value="school">School</option>
       <option value="comedy">Comedy</option>
-      <option value="shoujo">Shoujo</option>
-      <option value="slice of life">Slice of Life</option>
       <option value="drama">Drama</option>
+      <option value="slice of life">Slice of Life</option>
+      <option value="thriller">Thriller</option>
     </select>
   );
 };

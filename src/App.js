@@ -8,7 +8,20 @@ import Footer from "./components/Footer";
 class App extends Component {
   state = {
     filter: "none",
-    results: [{ id: 1 }, { id: 2 }, { id: 3 }]
+    results: [
+      { id: 1, title: "Kimi Ni Todoke", genre: "Romance", rating: 9 },
+      { id: 2, title: "Erased", genre: "Thriller", rating: 9 },
+      { id: 3, title: "Skip Beat!", genre: "Comedy", rating: 10 },
+      { id: 4, title: "Nana", genre: "Drama", rating: 9 },
+      { id: 5, title: "Ao Haru Ride", genre: "Romance", rating: 8 },
+      { id: 6, title: "Anohana", genre: "Romance", rating: 10 },
+      { id: 7, title: "Clannad: After Story", genre: "Romance", rating: 9 },
+      { id: 8, title: "Tsuki ga Kirei ", genre: "School", rating: 9 },
+      { id: 9, title: "Violet Evergarden", genre: "Drama", rating: 10 },
+      { id: 10, title: "Lucky Star", genre: "Slice of Life", rating: 7 },
+      { id: 11, title: "Kaichou wa Maid-sama!", genre: "School", rating: 8 },
+      { id: 12, title: "Ouran Koukou Host Club ", genre: "School", rating: 9 }
+    ]
   };
 
   handleChange = event => {
