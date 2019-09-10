@@ -1,10 +1,32 @@
 import React, { Component } from "react";
 import "./App.css";
+import Header from "./components/Header";
+import Filter from "./components/Filter";
+import Results from "./components/Results";
+import Footer from "./components/Footer";
 
 class App extends Component {
-  state = {};
+  state = {
+    filter: "none",
+    results: []
+  };
+  // title = "Anime Suggestion App";
+
+  handleChange = event => {
+    this.setState({ filter: event });
+  };
   render() {
-    return <div className="app"></div>;
+    return (
+      <div className="app">
+        <Header title="Anime Suggestion App" />
+        <Filter
+          filterValue={this.state.filter}
+          handleChange={this.handleChange}
+        />
+        <Results />
+        <Footer />
+      </div>
+    );
   }
 }
 

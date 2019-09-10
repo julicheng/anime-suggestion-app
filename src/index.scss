@@ -1,0 +1,29 @@
+body {
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  margin: 0;
+
+  .app {
+    width: 600px;
+    margin: 0 auto;
+    background: peachpuff;
+    .header {
+      .title {
+        font-size: 45px;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        color: white;
+        text-shadow: gray;
+      }
+    }
+    select {
+      font-size: 16px;
+      background: lightskyblue;
+      color: white;
+    }
+    .footer {
+      color: white;
+    }
+  }
+}
