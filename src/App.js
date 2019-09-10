@@ -8,9 +8,8 @@ import Footer from "./components/Footer";
 class App extends Component {
   state = {
     filter: "none",
-    results: []
+    results: [{ id: 1 }, { id: 2 }, { id: 3 }]
   };
-  // title = "Anime Suggestion App";
 
   handleChange = event => {
     this.setState({ filter: event });
@@ -23,7 +22,7 @@ class App extends Component {
           filterValue={this.state.filter}
           handleChange={this.handleChange}
         />
-        <Results />
+        <Results results={this.state.results} />
         <Footer />
       </div>
     );

@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import Result from "./Result";
 
-class Results extends Component {
-  state = {};
-  render() {
-    return "";
-  }
-}
+const Results = props => {
+  return props.results.map(result => {
+    return <Result result={result.id} />;
+  });
+};
 
 export default Results;
