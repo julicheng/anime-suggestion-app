@@ -3,7 +3,7 @@ import Result from "./Result";
 
 const Results = props => {
   return props.results.map(result => {
-    return <Result result={result.id} />;
+    return <Result key={result.id} result={result.id} />;
   });
 };
 
